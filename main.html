@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luke's Blackjack game</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="gameLogic.js"></script>
+</head>
+<body>
+
+<h1>Luke's super-awesome-cool blackjack game!</h1>
+
+<input type="button" class="btn" ID="newGame" value="New Game" onclick="start()"/>
+<input type="button" class="btn" ID="hit" value="Hit" onclick="hit()" />
+<input type="button" class="btn" ID="stand" value="Stand" onclick="stand()" />
+<input type="button" class="btn" ID="reset" value="Reset" onclick="reset()" />
+
+<div id="status" class="status">
+    <table id="scores" style="width:20%">
+        <tr>
+            <th>Your Score:</th>
+            <th>Dealer Score:</th>
+        </tr>
+        <tr>
+            <td id="playerScore">0</td>
+            <td id="dealerScore">0</td>
+        </tr>
+    </table>
+    <div class="card" id="deckCount"></div>
+    <div class="gameStatus" id="gameStatus"></div>
+</div>
+
+<!--<table id="cardsPlayed" border="1">
+    <tr>
+        <th id="yourCardsTable">Your cards</th>
+        <th id="dealerCardsTable">Dealer's cards</th>
+    </tr>
+
+</table>-->
+
+</body>
+</html>
